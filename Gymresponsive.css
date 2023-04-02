@@ -1,0 +1,306 @@
+/* 350 sy onward */
+@media (min-width: 310px) and (max-width: 500px) {
+  /* *{
+   border: 3px solid red;
+} */
+
+
+  /* navigation bar */
+  #navbar {
+    flex-direction: column;
+    padding: 12px 5px;
+  }
+  #navbar img {
+    margin: 4px 10px;
+  }
+  #navbar li a {
+    font-size: 10px;
+    padding: 0px 7px;
+    padding-bottom: 8px;
+  }
+  /* Home */
+  #Home {
+    overflow: hidden;
+    height: 400px;
+    padding: 5px 14px;
+    padding: 5px 14px;
+  }
+  /* container */
+  #Home .container {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+  }
+  .h-primary {
+    font-size: 1.2rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  #Home .Memebership-button {
+    font-size: 15px;
+    margin-left: 100px;
+  }
+    /* Services */
+    #Services {
+        flex-wrap: wrap;
+        height: 500px;
+      }
+      #Services .box {
+        width: 250px;
+        margin: 10px 10px;
+        padding: 0px 65px;
+        position: relative;
+        top: 20px;
+        height: 150px;
+      }
+      .h2-primary {
+        margin-top: 15px;
+        font-size: 1.5rem;
+     
+      }
+      #Services p {
+        font-size: 1rem;
+      }
+    
+      #Services img {
+        height: 100px;
+      }
+    
+      /* class */
+      table {
+        height: 50px;
+        border-spacing: 0px;
+        margin: 10px 10px;
+        width: 100px;
+        
+      }
+      table th,
+      td {
+        border: 2px solid white;
+        height: 100px;
+      }
+      table td{
+        font-size: 1rem;
+      }
+      table th {
+        color: white;
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.326);
+      }
+      .contact-button
+      {
+        margin-left: 79px;
+      }
+      /* footer class */
+      .center {
+        font-size: 12px;
+        
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOR larger devices */
+@media (min-width: 500px) and (max-width: 900px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  /* navigation bar */
+  #navbar {
+    flex-direction: column;
+    padding: 12px 4px;
+  }
+  #navbar img {
+    margin: 1px 24px;
+  }
+  #navbar li a {
+    font-size: 1rem;
+    padding: 0px 8px;
+    padding-bottom: 10px;
+  }
+  /* Home */
+  #Home {
+    height: 400px;
+    padding: 5px 14px;
+    padding: 5px 14px;
+  }
+  /* container */
+  #Home .container {
+    width: 400px;
+    height: 300px;
+    top: 160px;
+  }
+  .h-primary {
+    font-size: 1.2rem;
+  }
+  .container p {
+    font-size: 1rem;
+  }
+  #Home .Memebership-button {
+    font-size: 15px;
+    margin-left: 140px;
+  }
+  /* Services */
+  #Services {
+    flex-wrap: wrap;
+   
+  }
+  .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    
+  }
+  .box {
+    width: 150px;
+  }
+
+  /* class */
+  table {
+    height: 100px;
+    border-spacing: 5px;
+    margin: 10px 10px;
+  }
+  table th,
+  td {
+    border: 2px solid white;
+    height: 100px;
+  }
+  table th {
+    color: white;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.264);
+  }}
+  @media(min-width:650px) and (max-width:1100px)
+  {
+    .contact-sec img
+{
+    height: 200px;
+    width: 200px;
+    margin: 40px 5px;
+    border-radius: 20px;
+  
+  
+}
+.contact 
+{
+    
+   height: 550px;
+   width: 500px;
+ 
+
+margin: 40px 10px;
+
+}
+.center {
+  font-size: 12px;
+  
+}
+input[type="text"],input[type="email"]
+
+{
+  
+    margin-top: 10px;
+height: 30px;
+    width: 200px;
+        background: transparent;
+        border: none;
+        border-bottom: 3px solid rgb(88, 87, 87);
+    color: white;
+}
+.myform{
+
+    margin: 40px 10px;
+    display: flex;
+    flex-direction: column;
+  
+}
+.myform p{
+    font-size: 1.3rem;
+}
+label{
+    padding: 10px 10px;
+    font-size: 8px;
+    margin-top: 20px;
+   
+}
+.info{
+   
+    width: 100px;
+    height: 200px;
+    margin: 40px 5px;
+   
+    padding: 10px 20px;
+    }
+    .info h1{
+        font-size: 1rem;
+        margin-top: 30px;
+    color: white;
+    }
+    .info p{
+        
+        padding: 15px 10px;
+        font-size: 10px;
+    }
+    #icon img
+{ 
+    height: 20px;
+    width: 20px;
+}}
+@media(min-width:350px) and (max-width:650px)
+{
+    
+    .contact 
+    { 
+       height: 550px;
+       width: 400px;
+    flex-direction: column;
+    margin: 10px 10px;
+    
+    }
+    .contact .img1{
+        display: none;
+    }
+   
+.myform{
+
+    margin: 10px 10px;
+  
+}
+.myform p{
+    font-size: 1rem;
+}
+label{
+    padding: 10px 10px;
+    font-size: 8px;
+    margin-top: 20px;
+   
+} 
+.info{
+    margin: 0px 10px;
+    padding: 0px 20px;
+}
+}
+  
+@media(min-width:650px) and (max-width:1050px)
+{
+  .contact{
+    margin-left: 130px;
+  }
+}

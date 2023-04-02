@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Gym.css" />
+    <link rel="stylesheet"   href="Gymresponsive.css">
+  </head>
+
+  <body>
+    <nav id="navbar" >
+      <div id="logo">
+        <img src="logo1.png" alt="Fitnesscenter.com" />
+      </div>
+      <ul>
+        <li class="item"><a href="#home" ><u>Home</u></a></li>
+        <li class="item"><a href="#service-cont">Our Services</a></li>
+        <li class="item"><a href="#service-cont">Fitness Calculator</a></li>
+        <li class="item"><a href="#classes">Scheduales</a></li>
+        <li class="item"><a href="#contact-sec">Contact Us</a></li>
+      </ul>
+    </nav>
+    <section id="Home">
+      <div class="container">
+        <h1 class="h-primary">Want it? Work For It!</h1>
+        <p>Welcome to Fitness Center</p>
+   <a href="memebership.html">
+          <button class="Memebership-button" >Membership</button>
+        </a>
+      </div>
+    </section>
+    <section class="service-cont" id="service-cont">
+      <h1 class="h2-primary">Our Services</h1>
+      <div id="Services">
+        <div class="box">
+          <img src="cardioworkout.png" alt="" />
+          <p class="service-paragraphs">Cardio Training</p>
+        </div>
+        <div class="box">
+          <img src="weightligting.png" alt="" />
+          <p class="service-paragraphs">Weight Lifting Training</p>
+        </div>
+
+        <div class="box">
+          <img src="squat.png" alt="" />
+          <p class="service-paragraphs">Weight Loss Training</p>
+        </div>
+        <div class="box">
+          <img src="yoga.png" alt="" />
+          <p class="service-paragraphs">Yoga And Stretching Training</p>
+        </div>
+        <div class="box">
+          <img src="FT.webp" alt="" />
+          <p class="service-paragraphs">Functional Training</p>
+        </div>
+      </div>
+    </section>
+    <!-- Classes section -->
+    <section id="classes">
+      <h1 class="h1-class">Classes Scheduale</h1>
+      <p>Monday To Saturday</p>
+      <table class="classes" style="width: 90%">
+        <tr>
+          <th>Classes</th>
+          <th>Morning</th>
+          <th>Evening</th>
+          <th>Female Trainer</th>
+          <th>Male Trainer</th>
+        </tr>
+        <tr>
+          <td>Cardio Training</td>
+          <td>9:00am-11:00am</td>
+          <td>5:00pm-6:30am</td>
+          <td>Ms Emliy</td>
+          <td>Mr John</td>
+        </tr>
+        <tr>
+          <td>Weight Loss Training</td>
+          <td>8:00am-10:00am</td>
+          <td>5:00-7:30pm</td>
+          <td>Ms Anna</td>
+          <td>Mr Sam</td>
+        </tr>
+        <tr>
+          <td>Weight Lifting Training</td>
+          <td>8:30am-10:30am</td>
+          <td>6pm-7:30pm</td>
+          <td>Ms Alex</td>
+          <td>Mr Henry</td>
+        </tr>
+        <tr>
+          <td>Yoga And Stretching Training</td>
+          <td>8:30am-10:00am</td>
+          <td>6pm-7:30pm</td>
+          <td>Ms Kelly</td>
+          <td>Mr Ethen</td>
+        </tr>
+        <tr>
+          <td>Functional Training</td>
+          <td>9:30am-11:00am</td>
+          <td>6:30pm-8:30pm</td>
+          <td>Ms Sara</td>
+          <td>Mr David</td>
+        </tr>
+      </table>
+    </section>
+    <section class="contact-sec" id="contact-sec">
+      <h1>Get In Touch</h1>
+      <div class="contact">
+      <img class="img1"
+      src="contactpg.jpg" alt="">
+   
+      
+        <form action="#" class="myform"  onsubmit="return validation()">
+          <label for="name">
+            Full Name
+            <input type="text" name="name" id="user" >
+          </label>
+          <label for="email" >
+            Email
+            <input type="email" id="email" name="email">
+          </label>
+          <label for="message">
+            Message
+            <textarea name="msg" id="msg" cols="40" rows="2"></textarea>
+          </label>
+          
+          <button type="submit"  class="contact-button" >Contact Us</button>
+        
+        </form>
+        <div class="info">
+          <h1>Contact</h1>
+          <p>abc218@gmail.com</p>
+          <h1>Based In</h1>
+          <p>Us, Chicago</p>
+          <div id="icon">
+          <img src="linkedin.png" alt=""
+          ><img src="instalogo.png" alt=""
+          ><img src="fblogo.png" alt=""></div>
+               </div>
+      </div>
+       
+    
+    </section>
+    <footer>
+      <div class="center">Copyright &copy; www.FoodyOnline.com All right reserved!</div>
+    </footer>
+    <script type="text/javascript" >
+      function validation(){
+    var user = document.getElementById('user').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('msg').value;
+if(user=="")
+{
+alert("Name must be filled out");
+return false;
+}
+if(email=="")
+{
+alert("Email must be filled out");
+return false;
+}
+
+if(msg=="")
+{
+alert("Message must be filled out");
+return false;
+}
+if((user.length<=2) || (user.length>20))
+{
+alert("Name must be between 2 and 20");
+return false;
+}
+if(!isNaN(user))
+{
+alert("Only characters are allowed");
+return false;
+}
+if((msg.length<=3) || (msg.length>50))
+{
+alert("Message must be must be between 3 and 50");
+return false;
+}
+if(email.indexOf('@')<=0)
+{
+alert("Invalid ");
+return false;
+}
+if(email.charAt(email.length-4)!='.'){
+alert("Invalid Email");
+return false;
+}
+else{
+    alert("Submitted Successfully")
+}
+}
+
+
+
+    </script>
+  </body>
+</html>
